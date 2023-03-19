@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;800&display=swap');
+
+body {
+  background-image: url("OIP.jpeg")
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  overflow: hidden;
+  background-color: darkseagreen;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.header a.active {
+  background-color: white;
+  color: darkseagreen;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header-right {
+    float: none;
+  }
+}
+
+h2 {
+font-family: 'Cinzel', serif;
+font-size: 40px;
+text-align: center;
+color: white;
+background-color: darkseagreen;
+background-size: 800px;
+height: 100%;
+padding: 10px;
+}
+
+h3 {
+font-family: 'Cinzel', serif;
+font-size: 40px;
+text-align: center;
+color: white;
+background-color: darkseagreen;
+background-size: 800px;
+height: 100%;
+padding: 10px;
+}
+
+.contenant {
+  position: relative;
+  text-align: center;
+  color: ghostwhite;
+  font-size: 30px;
+  border-color: black;
+}
+
+.texte_centrer {
+font-family: 'Cinzel', serif;
+font-size: 70px;
+width: 60%;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.container {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 90%; 
+  padding: 40px; 
+  margin-left: 20px;
+}
+
+.content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 90%;
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 71px;
+  margin-bottom: 7px;
+}
+
+.Headline {
+	font-size: 20px;
+  font-family: 'Cinzel', serif;
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+.Cherry {
+	border: 5px solid lightpink;
+	background-color: white;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 20px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Adjust {
+  margin-top: -20px;
+  margin-bottom: -10px;
+  display: table;
+  padding: -100px;
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: darkseagreen;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  align-items: center;
+  display: table;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
